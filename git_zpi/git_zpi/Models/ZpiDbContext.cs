@@ -12,7 +12,8 @@ namespace git_zpi.Models
         public ZpiDbContext()
             : base("SqlClient")
         {
-
         }
+
+        public DbSet<UserModel> Users { get; set; }
     }
 }

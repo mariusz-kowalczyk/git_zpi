@@ -1,4 +1,5 @@
-﻿using System;
+﻿using git_zpi.Forms.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace git_zpi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new RegisterUserForm());
         }
     }
 }
