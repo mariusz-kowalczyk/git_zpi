@@ -51,11 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Users\LoginUserForm.cs">
       <SubType>Form</SubType>
@@ -69,6 +69,9 @@
     <Compile Include="Forms\Users\RegisterUserForm.Designer.cs">
       <DependentUpon>RegisterUserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lib\Auth.cs" />
+    <Compile Include="Lib\FormHelper.cs" />
+    <Compile Include="Lib\Hash.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\ZpiDbContext.cs" />
@@ -77,6 +80,9 @@
     <Compile Include="Repositories\IUserRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\LoginUserForm.resx">
       <DependentUpon>LoginUserForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using git_zpi.Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -31,7 +32,7 @@ namespace git_zpi.Models
 
         public static string hashPass(string str)
         {
-            return str;
+            return Hash.MD5("*454%^zpi" + str + ":;';097");
         }
     }
 }

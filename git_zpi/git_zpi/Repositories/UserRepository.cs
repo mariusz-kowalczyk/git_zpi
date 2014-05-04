@@ -24,5 +24,15 @@ namespace git_zpi.Repositories
 
             _context.SaveChanges();
         }
+
+        public UserModel GetByLogin(string login)
+        {
+            return _context.Users.SingleOrDefault(u => u.Login == login);
+        }
+
+        public int Count()
+        {
+            return _context.Users.Count();
+        }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using git_zpi.Forms.Users;
+using git_zpi.Models;
+using git_zpi.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +19,18 @@ namespace git_zpi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegisterUserForm());
+
+            IUserRepository _users = new UserRepository(new ZpiDbContext());
+
+            if (_users.Count() > 0)
+            {
+                Application.Run(new LoginUserForm());
+            }
+            else
+            {
+                Application.Run(new RegisterUserForm());
+            }
+            
         }
     }
 }

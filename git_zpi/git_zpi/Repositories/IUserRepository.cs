@@ -10,5 +10,7 @@ namespace git_zpi.Repositories
     interface IUserRepository : IDisposable
     {
         void Add(UserModel user);
+        UserModel GetByLogin(string login);
+        int Count();
     }
 }
