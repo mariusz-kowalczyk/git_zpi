@@ -51,6 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\InvoiceProductType.cs" />
+    <Compile Include="Constants\InvoiceSumAmountType.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +75,10 @@
     <Compile Include="Lib\FormHelper.cs" />
     <Compile Include="Lib\Hash.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\InvoiceAddressModel.cs" />
+    <Compile Include="Models\InvoiceModel.cs" />
+    <Compile Include="Models\InvoiceProductsModel.cs" />
+    <Compile Include="Models\JotbDbContext.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\ZpiDbContext.cs" />
     <Compile Include="Program.cs" />
