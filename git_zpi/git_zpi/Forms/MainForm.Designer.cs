@@ -30,6 +30,7 @@
         {
             this.LogoutButton = new System.Windows.Forms.Button();
             this.newUserButton = new System.Windows.Forms.Button();
+            this.buttonGenerujFakture = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LogoutButton
@@ -52,11 +53,22 @@
             this.newUserButton.UseVisualStyleBackColor = true;
             this.newUserButton.Click += new System.EventHandler(this.newUserButton_Click);
             // 
+            // buttonGenerujFakture
+            // 
+            this.buttonGenerujFakture.Location = new System.Drawing.Point(394, 264);
+            this.buttonGenerujFakture.Name = "buttonGenerujFakture";
+            this.buttonGenerujFakture.Size = new System.Drawing.Size(121, 23);
+            this.buttonGenerujFakture.TabIndex = 5;
+            this.buttonGenerujFakture.Text = "Generuj fakture";
+            this.buttonGenerujFakture.UseVisualStyleBackColor = true;
+            this.buttonGenerujFakture.Click += new System.EventHandler(this.buttonGenerujFakture_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 551);
+            this.Controls.Add(this.buttonGenerujFakture);
             this.Controls.Add(this.newUserButton);
             this.Controls.Add(this.LogoutButton);
             this.Name = "MainForm";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button LogoutButton;
         private System.Windows.Forms.Button newUserButton;
+        private System.Windows.Forms.Button buttonGenerujFakture;
     }
 }

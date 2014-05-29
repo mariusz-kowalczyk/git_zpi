@@ -43,3 +43,4 @@ C:\Users\Kamil\Desktop\Git\git_zpi\git_zpi\obj\Debug\git_zpi.Forms.Users.LoginUs
 C:\Users\Kamil\Desktop\Git\git_zpi\git_zpi\obj\Debug\git_zpi.Forms.Users.RegisterUserForm.resources
 C:\Users\Kamil\Desktop\Git\git_zpi\git_zpi\obj\Debug\git_zpi.Properties.Resources.resources
 C:\Users\Kamil\Desktop\Git\git_zpi\git_zpi\obj\Debug\git_zpi.csproj.GenerateResource.Cache
+C:\Users\Kamil\Desktop\Git\git_zpi\git_zpi\obj\Debug\git_zpi.Forms.InvoiceGenerate.resources

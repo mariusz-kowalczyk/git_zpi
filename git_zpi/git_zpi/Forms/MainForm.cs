@@ -29,5 +29,11 @@ namespace git_zpi.Forms
         {
             FormHelper.OpenForm(new RegisterUserForm());
         }
+
+        private void buttonGenerujFakture_Click(object sender, EventArgs e)
+        {
+            InvoiceGenerate IG = new InvoiceGenerate();
+            IG.ShowDialog();
+        }
     }
 }
