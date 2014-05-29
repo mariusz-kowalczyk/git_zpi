@@ -53,6 +53,12 @@
   <ItemGroup>
     <Compile Include="Constants\InvoiceProductType.cs" />
     <Compile Include="Constants\InvoiceSumAmountType.cs" />
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\InvoiceGenerate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,12 @@
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\ListUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\ListUserForm.Designer.cs">
+      <DependentUpon>ListUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Users\LoginUserForm.cs">
       <SubType>Form</SubType>
@@ -103,6 +115,9 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\ListUserForm.resx">
+      <DependentUpon>ListUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\LoginUserForm.resx">
       <DependentUpon>LoginUserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +135,7 @@
     </Compile>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\git_zpi.Models.UserModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

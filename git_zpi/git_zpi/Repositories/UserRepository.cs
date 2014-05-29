@@ -1,6 +1,7 @@
 ﻿using git_zpi.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,11 @@ namespace git_zpi.Repositories
         public int Count()
         {
             return _context.Users.Count();
+        }
+
+        public List<UserModel> All()
+        {
+            return _context.Users.ToList();
         }
     }
 }

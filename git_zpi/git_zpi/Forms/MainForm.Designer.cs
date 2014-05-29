@@ -31,6 +31,7 @@
             this.LogoutButton = new System.Windows.Forms.Button();
             this.newUserButton = new System.Windows.Forms.Button();
             this.buttonGenerujFakture = new System.Windows.Forms.Button();
+            this.usersListButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LogoutButton
@@ -63,11 +64,22 @@
             this.buttonGenerujFakture.UseVisualStyleBackColor = true;
             this.buttonGenerujFakture.Click += new System.EventHandler(this.buttonGenerujFakture_Click);
             // 
+            // usersListButton
+            // 
+            this.usersListButton.Location = new System.Drawing.Point(660, 12);
+            this.usersListButton.Name = "usersListButton";
+            this.usersListButton.Size = new System.Drawing.Size(75, 23);
+            this.usersListButton.TabIndex = 6;
+            this.usersListButton.Text = "List of users";
+            this.usersListButton.UseVisualStyleBackColor = true;
+            this.usersListButton.Click += new System.EventHandler(this.usersListButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 551);
+            this.Controls.Add(this.usersListButton);
             this.Controls.Add(this.buttonGenerujFakture);
             this.Controls.Add(this.newUserButton);
             this.Controls.Add(this.LogoutButton);
@@ -82,5 +94,6 @@
         private System.Windows.Forms.Button LogoutButton;
         private System.Windows.Forms.Button newUserButton;
         private System.Windows.Forms.Button buttonGenerujFakture;
+        private System.Windows.Forms.Button usersListButton;
     }
 }

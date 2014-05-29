@@ -13,13 +13,14 @@ using System.Windows.Forms;
 
 namespace git_zpi.Forms.Users
 {
-    public partial class LoginUserForm : Form
+    public partial class LoginUserForm : BaseForm
     {
         private IUserRepository _users;
 
         public LoginUserForm()
         {
             InitializeComponent();
+            this.enableCloseApp = true;
             _users = new UserRepository(new ZpiDbContext());
         }
 

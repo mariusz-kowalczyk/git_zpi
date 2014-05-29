@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace git_zpi.Forms.Users
 {
-    public partial class RegisterUserForm : Form
+    public partial class RegisterUserForm : BaseForm
     {
         private IUserRepository _users;
 

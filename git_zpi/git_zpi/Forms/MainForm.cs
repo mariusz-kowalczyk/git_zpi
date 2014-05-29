@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace git_zpi.Forms
 {
-    public partial class MainForm : Form
+    public partial class MainForm : BaseForm
     {
         public MainForm()
         {
@@ -34,6 +34,11 @@ namespace git_zpi.Forms
         {
             InvoiceGenerate IG = new InvoiceGenerate();
             IG.ShowDialog();
+        }
+
+        private void usersListButton_Click(object sender, EventArgs e)
+        {
+            FormHelper.OpenForm(new ListUserForm());
         }
     }
 }
