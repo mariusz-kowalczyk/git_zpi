@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace jotb.Constants
+namespace git_zpi.Constants
 {
     class InvoiceProductType
     {

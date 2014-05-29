@@ -1,5 +1,5 @@
-﻿using jotb.Library;
-using jotb.Models;
+﻿using git_zpi.Library;
+using git_zpi.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace jotb.Repositories
+namespace git_zpi.Repositories
 {
     class InvoiceRepository : IInvoiceRepository, IDisposable
     {
-        private JotbDbContext _context;
-        public InvoiceRepository(JotbDbContext context)
+        private ZpiDbContext _context;
+        public InvoiceRepository(ZpiDbContext context)
         {
             _context = context;
         }

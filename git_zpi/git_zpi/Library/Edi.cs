@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace jotb.Library
+namespace git_zpi.Library
 {
     class Edi
     {

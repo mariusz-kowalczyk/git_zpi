@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace jotb.Library
+namespace git_zpi.Library
 {
     class Print
     {
