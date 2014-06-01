@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace jotb.Models
+namespace git_zpi.Models
 {
     [Table("Invoices")]
     class InvoiceModel

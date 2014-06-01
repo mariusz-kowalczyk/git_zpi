@@ -1,4 +1,4 @@
-﻿using jotb.Constants;
+﻿using git_zpi.Constants;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace jotb.Models
+namespace git_zpi.Models
 {
     [Table("InvoiceProducts")]
     class InvoiceProductModel

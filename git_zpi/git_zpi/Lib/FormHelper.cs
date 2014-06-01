@@ -13,16 +13,17 @@ namespace git_zpi.Lib
     {
         private static int countOpenWindows = 1;
 
-        public static void Checkout(Form oldForm, Form newForm)
+        public static void Checkout(BaseForm oldForm, BaseForm newForm)
         {
             System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(() => Application.Run(newForm)));
             t.SetApartmentState(System.Threading.ApartmentState.STA);
 
             t.Start();
+            oldForm.enableCloseApp = true;
             oldForm.Close();
         }
 
-        public static void OpenForm(Form form)
+        public static void OpenForm(BaseForm form)
         {
             System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(() => Application.Run(form)));
             t.SetApartmentState(System.Threading.ApartmentState.STA);
@@ -31,8 +32,9 @@ namespace git_zpi.Lib
             t.Start();
         }
 
-        public static void CloseForm(Form form)
+        public static void CloseForm(BaseForm form)
         {
+            form.enableCloseApp = true;
             if (countOpenWindows > 1)
             {
                 countOpenWindows--;

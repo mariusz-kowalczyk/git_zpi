@@ -1,5 +1,5 @@
-﻿using jotb.Models;
-using jotb.Repositories;
+﻿using git_zpi.Models;
+using git_zpi.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +21,7 @@ namespace git_zpi.Forms
         public InvoiceGenerate()
         {
             InitializeComponent();
-            _invoice = new InvoiceRepository(new JotbDbContext());
+            _invoice = new InvoiceRepository(new ZpiDbContext());
         }
         
 
