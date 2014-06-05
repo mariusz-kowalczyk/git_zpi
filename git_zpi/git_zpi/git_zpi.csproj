@@ -49,6 +49,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\InvoiceProductType.cs" />
@@ -92,6 +96,7 @@
     <Compile Include="Library\Barcode.cs" />
     <Compile Include="Library\Edi.cs" />
     <Compile Include="Library\Fun.cs" />
+    <Compile Include="Library\Helper\Dict.cs" />
     <Compile Include="Library\Print.cs" />
     <Compile Include="Lib\Auth.cs" />
     <Compile Include="Lib\FormHelper.cs" />
@@ -134,6 +139,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="App.config" />
+    <None Include="bin\Debug\git_zpi.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\git_zpi.Models.UserModel.datasource" />
     <None Include="Properties\Settings.settings">
@@ -145,6 +151,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\git_zpi.exe" />
+    <Content Include="bin\Debug\git_zpi.pdb" />
+    <Content Include="Zen.Barcode.Core.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
